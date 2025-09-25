@@ -7,7 +7,7 @@ const resultado = document.querySelector("#resultado");
 botao.addEventListener("click", function() {
     const palpite = Number(input.value);
 
-    if (isNAN(palpite) || palpite < 1 || palpite > 10) {
+    if (isNaN(palpite) || palpite < 1 || palpite > 10) {
         resultado.textContent = "Digite um número válido de 1 a 10!";
         resultado.style.color = "red";
         return;
